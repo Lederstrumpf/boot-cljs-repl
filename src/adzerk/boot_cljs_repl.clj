@@ -197,5 +197,5 @@
     ;; FIXME: concat :middleware?
     (apply repl (mapcat identity (merge nrepl-opts
                                         {:server true
-                                         :middleware ['cemerick.piggieback/wrap-cljs-repl]})))
+                                         :middleware ['cider.piggieback/wrap-cljs-repl]})))
     (apply cljs-repl-env (mapcat identity (dissoc *opts* :nrepl-opts)))))
